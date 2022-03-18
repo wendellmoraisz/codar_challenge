@@ -46,7 +46,7 @@
 .apresentation {
     display: flex;
     justify-content: space-evenly;
-    width: 60%;
+    width: 1100px;
     height: 500px;
     margin-top: 100px;
     margin-left: auto;
@@ -84,7 +84,7 @@
 .services {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 1100px;
     height: 500px;
     margin-top: 150px;
     margin-left: auto;
@@ -201,4 +201,101 @@ footer .social ul {
     border: none;
     border-radius: 7px;
     cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .apresentation,
+    .services {
+        width: 800px;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .apresentation,
+    .services {
+        height: auto;
+        width: 80%;
+    }
+    .login-btn {
+        display: none;
+    }
+    
+    .menu .title {
+        margin-bottom: 20px;
+    }
+
+    .apresentation .text button {
+        width: 80%;
+    }
+
+    .apresentation .text {
+        font-size: 1.9rem;
+    }
+
+    .apresentation {
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    
+    .services {
+        flex-direction: column-reverse;
+    }
+
+    .services .txt {
+        align-items: center;
+    }
+    
+    .apresentation .text,
+    .services .txt form{
+        text-align: center;
+        align-items: center;
+    }
+
+    .services .txt form input,
+    .services .txt form button{
+        margin-bottom: 20px;
+        width: 70%;
+    }
+
+    .services .txt form input {
+        padding: 10px 0;
+    }
+
+    .depoiments {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .depoiment {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .depoiment .dpm-txt {
+        max-width: 55%;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    footer .logo {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .social i {
+        font-size: 2.5rem;
+    }
+
 }
