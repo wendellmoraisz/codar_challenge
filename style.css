@@ -21,6 +21,10 @@
     font-style: italic;
 }
 
+.menu .title a {
+    text-decoration: none;
+}
+
 .menu .title span {
     color: #000;
 }
@@ -34,6 +38,11 @@
     color: #000;
     text-decoration: none;
     padding: 5px 30px;
+    transition: color .3s ease;
+}
+
+.menu .options li:not(.login-btn) :hover {
+    color: #D6000D;
 }
 
 .menu .options .red-btn a{
@@ -89,6 +98,16 @@
     margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
+}
+
+button:hover,
+.menu .options .login-btn a:hover {
+    background-color: #222;
+}
+
+button,
+.menu .options .login-btn a{
+    transition: all .4s ease;
 }
 
 .services .txt {
